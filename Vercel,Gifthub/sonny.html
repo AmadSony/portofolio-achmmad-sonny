@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amad Sony — Engineering Drafter</title>
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- ICON -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background:#0a0a0a;
+    color:#f5f5f5;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    backdrop-filter:blur(10px);
+    background:rgba(10,10,10,0.6);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    z-index:1000;
+}
+nav a{
+    color:#737373;
+    margin-left:20px;
+    text-decoration:none;
+    font-size:14px;
+}
+nav a:hover{color:#ffffff}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+.hero-text h1{
+    font-size:52px;
+    font-weight:700;
+}
+.hero-text p{
+    margin-top:10px;
+    color:#737373;
+}
+.hero-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:#111;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+/* GLASS */
+.glass{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:12px;
+    padding:25px;
+}
+
+/* ABOUT */
+.stats{
+    display:flex;
+    gap:40px;
+    margin-top:20px;
+}
+.stats h3{font-size:24px}
+
+/* QUOTE */
+.quote{
+    margin-top:20px;
+    border-left:2px solid #737373;
+    padding-left:15px;
+    font-style:italic;
+    color:#a1a1a1;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+.skill{
+    padding:8px 14px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:999px;
+    font-size:13px;
+    color:#ccc;
+}
+
+/* PROJECT */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.project{
+    overflow:hidden;
+    border-radius:10px;
+}
+.project img{
+    width:100%;
+    transition:0.4s;
+}
+.project:hover img{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#737373;
+}
+.social a{
+    margin:0 10px;
+    color:#737373;
+    font-size:18px;
+}
+.social a:hover{color:#fff}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div>Sony</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="container hero">
+    <div class="hero-text" data-aos="fade-up">
+        <h1>Amad Sony</h1>
+        <p>Engineering Drafter & Visual Problem Solver</p>
+    </div>
+    <div class="hero-img" data-aos="fade-up" data-aos-delay="200"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+    <div class="glass" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+        Sebagai seorang Engineering Drafter, saya berfokus pada ketelitian, akurasi, dan kejelasan dalam setiap detail gambar teknis. Saya memastikan setiap desain dapat dipahami dan diimplementasikan dengan baik di lapangan.
+        </p>
+
+        <div class="quote">
+        Dalam dunia engineering, keindahan sejati terletak pada presisi yang tidak terlihat oleh mata awam.
+        </div>
+
+        <div class="stats">
+            <div><h3>3+</h3><p>Tahun</p></div>
+            <div><h3>20+</h3><p>Proyek</p></div>
+        </div>
+
+        <div class="skills">
+            <span class="skill">AutoCAD</span>
+            <span class="skill">SketchUp</span>
+            <span class="skill">SAP2000</span>
+            <span class="skill">Lumion</span>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects" class="container">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="projects">
+        <div class="project" data-aos="fade-up">
+            <img src="https://via.placeholder.com/400x250">
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://via.placeholder.com/400x250">
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://via.placeholder.com/400x250">
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact" data-aos="fade-up">
+    <p>Let's connect</p>
+
+    <div class="social">
+        <a href="https://instagram.com/4ch.sonny" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/6282256542936" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:achmmadsonny@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <p style="margin-top:10px;">© 2026 Amad Sony</p>
+</footer>
+
+<!-- SCRIPT -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:1000, once:true});
+</script>
+
+</body>
+</html>
